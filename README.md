@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/mariam-merza/amn-group-demo">
-    <img src="assets/logos/amn-logo.jpg" alt="AMN Group Logo" width="300" height="300">
+    <img src="assets/logos/favicon.jpg" alt="AMN Group Logo" width="300" height="300">
   </a>
 
 <h3 align="center">AMN Group</h3>

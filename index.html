@@ -1,65 +1,28 @@
 <!-- AMN Group Company Website Demo
 
-Developer Notes:
+- Built with HTML, CSS and JavaScript. Includes Formspree API for contact form functionality
+- The demo only includes the design
+- For deployment, SEO optimization, and analytics, further development is required
+- Next steps: include SEO optimization, buy a domain, keep the website secure and updated
+
+Recommendations:
 - Create a Google page where customers can leave reviews
 - Enhance privacy policy and analyze data analytics for insights and predictions
 - Implement AI to optimize website and deal with queries (AI chatbot)
-- Minify your CSS and JS files
 
 -->
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AMN Group is Ontario's premier collective of owner-operated trade specialists. We offer roofing, waterproofing, HVAC, electrical, plumbing, renovations, and property management across Toronto, Vaughan, Mississauga, Brampton, Richmond Hill, Barrie, and the GTA.">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="AMN Group | Renovation & Property Management Contractors in Toronto & GTA">
-    <meta property="og:description" content="Ontario's premier collective of owner-operated specialists. No subcontractors, no markup. Roofing, HVAC, electrical, plumbing, waterproofing, and full renovations across the GTA.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.amngroupinc.com/">
-    <meta property="og:image" content="https://www.amngroupinc.com/assets/logos/amn-logo.webp">
-    <meta property="og:locale" content="en_CA">
-
-    <!-- LocalBusiness JSON-LD Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "AMN Group Inc",
-      "url": "https://www.amngroupinc.com",
-      "logo": "https://www.amngroupinc.com/assets/logos/amn-logo.webp",
-      "image": "https://www.amngroupinc.com/assets/logos/amn-logo.webp",
-      "telephone": "+1-647-640-5663",
-      "email": "info@amngroupinc.com",
-      "description": "Ontario's premier collective of owner-operated trade specialists offering roofing, waterproofing, HVAC, electrical, plumbing, interior renovations, landscaping, and property management.",
-      "areaServed": [
-        "Toronto", "Vaughan", "Mississauga", "Brampton", "Richmond Hill", "Barrie", "Greater Toronto Area"
-      ],
-      "serviceType": [
-        "Property Management",
-        "Flat Roofing",
-        "Foundation Waterproofing",
-        "Interior Renovations",
-        "Licensed Electrical",
-        "HVAC",
-        "Plumbing",
-        "Landscaping and Snow Removal",
-        "Painting and Exterior Upgrades",
-        "Tenant Relations"
-      ],
-      "priceRange": "$$",
-      "hasMap": "https://maps.google.com/?q=AMN+Group+Inc+Toronto+Ontario"
-    }
-    </script>
-
-    <title>AMN Group | Renovation & Property Management Contractors in Toronto & GTA</title>
-    <link rel="icon" type="image/png" href="/assets/logos/favicon.webp" loading="lazy">
+    <title>AMN Group</title>
+    <link rel="icon" type="image/png" href="/assets/logos/favicon.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="stylesheet" type="text/CSS" href="/styles.css">
     <script src="/script.js" defer></script>
 </head>
-
 <body>
     <div id="layout">
         <nav class="nav-bar" aria-label="Main navigation">
@@ -90,7 +53,7 @@ Developer Notes:
             </nav>
 
             <div class="nav-left">
-                <img src="./assets/logos/amn-logo.webp" alt="AMN logo" class="logo" loading="lazy">
+                <img src="./assets/logos/amn-logo.jpg" alt="AMN logo" class="logo">
             </div>
             <ul class="nav-links">
                 <li><a href="#services">Services</a></li>
@@ -119,7 +82,7 @@ Developer Notes:
             <div class="service-card" onclick="this.classList.toggle('active')">
                 <div class="service-header"><h3>Property Management</h3><span class="chevron">▼</span></div>
                 <div class="service-content">
-                    <img src="./assets/services/pm.webp" alt="Commercial property management services Toronto by AMN Group" class="service-img" loading="lazy">
+                    <img src="./assets/services/pm.jpg" alt="Property Management" class="service-img">
                     <p>Comprehensive property oversight designed for long-term value. We handle everything from preventative maintenance and system inspections to daily operations management, ensuring your commercial property remains in peak condition under our expert care.</p>
                 </div>
             </div>
@@ -127,7 +90,7 @@ Developer Notes:
             <div class="service-card" onclick="this.classList.toggle('active')">
                 <div class="service-header"><h3>Flat Roofing Specialists</h3><span class="chevron">▼</span></div>
                 <div class="service-content">
-                    <img src="./assets/services/roof.webp" alt="Flat roof BUR installation Toronto and GTA by AMN Group" class="service-img" loading="lazy">
+                    <img src="./assets/services/roof.jpeg" alt="Flat Roofing" class="service-img">
                     <p>Mastery in high-durability flat roofing systems. We specialize in Commercial and Residential BUR (Built-Up Roofing) and Mod-Bit installations, engineered to withstand Ontario’s extreme climate.</p>
                 </div>
             </div>
@@ -135,7 +98,7 @@ Developer Notes:
             <div class="service-card" onclick="this.classList.toggle('active')">
                 <div class="service-header"><h3>Foundation Waterproofing</h3><span class="chevron">▼</span></div>
                 <div class="service-content">
-                    <img src="./assets/services/water.webp" alt="Foundation waterproofing and weeping tile installation Toronto by AMN Group" class="service-img" loading="lazy">
+                    <img src="./assets/services/water.jpg" alt="Foundation Waterproofing" class="service-img">
                     <p>Protecting the structural integrity of your property from the ground up. We provide specialized exterior and interior waterproofing solutions, weeping tile installation, and foundational crack repairs to ensure a bone-dry foundation for both commercial and residential builds.</p>
                 </div>
             </div>
@@ -143,7 +106,7 @@ Developer Notes:
             <div class="service-card" onclick="this.classList.toggle('active')">
                 <div class="service-header"><h3>Interior Renovations & Design</h3><span class="chevron">▼</span></div>
                 <div class="service-content">
-                    <img src="./assets/services/reno.webp" alt="Kitchen and bathroom interior renovation Toronto by AMN Group" class="service-img" loading="lazy">
+                    <img src="./assets/services/reno.jpg" alt="Interior Renovations" class="service-img">
                     <p><strong>Commercial & Residential Excellence:</strong> Full-scale interior transformations including luxury home kitchen/bath remodels and professional office build-outs. Every project includes a complimentary professional interior designer.</p>
                 </div>
             </div>
@@ -151,7 +114,7 @@ Developer Notes:
             <div class="service-card" onclick="this.classList.toggle('active')">
                 <div class="service-header"><h3>Licensed Electrical</h3><span class="chevron">▼</span></div>
                 <div class="service-content">
-                    <img src="./assets/services/elec.webp" alt="Licensed master electrician panel upgrade and wiring Toronto by AMN Group" class="service-img" loading="lazy">
+                    <img src="./assets/services/elec.jpg" alt="Electrical Services" class="service-img">
                     <p>Master electricians for panel upgrades, complex wiring for renovations, and 24/7 emergency response. Safe, efficient, and fully code-compliant work you can depend on.</p>
                 </div>
             </div>
@@ -159,7 +122,7 @@ Developer Notes:
             <div class="service-card" onclick="this.classList.toggle('active')">
                 <div class="service-header"><h3>HVAC</h3><span class="chevron">▼</span></div>
                 <div class="service-content">
-                    <img src="./assets/services/hvac.webp" alt="HVAC installation and maintenance Toronto commercial and residential by AMN Group" class="service-img" loading="lazy">
+                    <img src="./assets/services/hvac.webp" alt="HVAC Services" class="service-img">
                     <p>Full-spectrum heating, ventilation, and air conditioning solutions. We design, install, and maintain high-efficiency systems for large-scale commercial facilities and private residences.</p>
                 </div>
             </div>
@@ -167,7 +130,7 @@ Developer Notes:
             <div class="service-card" onclick="this.classList.toggle('active')">
                 <div class="service-header"><h3>Plumbing</h3><span class="chevron">▼</span></div>
                 <div class="service-content">
-                    <img src="./assets/services/plumb.webp" alt="Expert plumbing services drain repair and fixture installation Toronto by AMN Group" class="service-img" loading="lazy">
+                    <img src="./assets/services/plumb.avif" alt="Plumbing Services" class="service-img">
                     <p>Expert plumbing infrastructure for new builds and existing properties. We handle fixture installations, drain maintenance, and emergency repairs for critical water systems.</p>
                 </div>
             </div>
@@ -175,7 +138,7 @@ Developer Notes:
             <div class="service-card" onclick="this.classList.toggle('active')">
                 <div class="service-header"><h3>Landscaping & Snow Removal</h3><span class="chevron">▼</span></div>
                 <div class="service-content">
-                    <img src="./assets/services/land.webp" alt="Landscaping stonework and commercial snow removal Toronto GTA by AMN Group" class="service-img" loading="lazy">
+                    <img src="./assets/services/land.jpg" alt="Landscaping and Snow" class="service-img">
                     <p>Custom stonework and professional landscape design. During winter, we provide priority commercial snow removal and de-icing to keep your property safe and accessible.</p>
                 </div>
             </div>
@@ -183,7 +146,7 @@ Developer Notes:
             <div class="service-card" onclick="this.classList.toggle('active')">
                 <div class="service-header"><h3>Painting & Exterior Upgrades</h3><span class="chevron">▼</span></div>
                 <div class="service-content">
-                    <img src="./assets/services/paint.webp" alt="Exterior painting and facade upgrades Toronto residential and commercial by AMN Group" class="service-img" loading="lazy">
+                    <img src="./assets/services/paint.jpg" alt="Painting Services" class="service-img">
                     <p>High-durability coatings for residential refreshes and commercial facade transformations that significantly enhance curb appeal and property value.</p>
                 </div>
             </div>
@@ -191,7 +154,7 @@ Developer Notes:
             <div class="service-card" onclick="this.classList.toggle('active')">
                 <div class="service-header"><h3>Tenant Relations</h3><span class="chevron">▼</span></div>
                 <div class="service-content">
-                    <img src="./assets/services/tenant.webp" alt="Tenant relations and property communication management Toronto by AMN Group" class="service-img" loading="lazy">
+                    <img src="./assets/services/tenant.avif" alt="Tenant Relations Officer" class="service-img">
                     <p>A specialized, complimentary service to manage logistics and notifications during major projects, ensuring a friction-free experience for owners and occupants alike.</p>
                 </div>
             </div>
@@ -203,7 +166,7 @@ Developer Notes:
         <div class="about-container">
 
             <div class="about-image">
-                 <img src="assets/about.webp" alt="Completed home renovation project by AMN Group in Toronto GTA" loading="lazy">
+                <img src="assets/about.jpg" alt="renovated house">
             </div>
 
             <div class="about-content">
